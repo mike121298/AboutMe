@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UX 設計師個人履歷</title>
+    <style>
+        /* 基礎樣式設定 */
+        body {
+            font-family: "Inter", "PingFang TC", "Helvetica Neue", sans-serif;
+            line-height: 1.7;
+            color: #2d3748;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 30px 20px;
+            background-color: #f8fafc;
+        }
+        
+        /* 頂部 Header */
+        header {
+            background-color: #475569;
+            color: white;
+            padding: 40px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+        }
+        header h1 { margin: 0; font-size: 2.3em; letter-spacing: 0.5px; }
+        header p { margin: 8px 0 20px; font-size: 1.1em; color: #cbd5e1; }
+        
+        /* 聯絡與作品集按鈕 */
+        .header-links a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+            font-size: 0.95em;
+        }
+        .header-links a.portfolio-btn {
+            background-color: #38bdf8;
+            color: #0f172a;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+        .header-links a.portfolio-btn:hover { background-color: #7dd3fc; }
+        .header-links a:not(.portfolio-btn):hover { text-decoration: underline; }
+        
+        /* 區塊樣式 */
+        section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: #1e293b;
+            font-size: 1.4em;
+            border-left: 4px solid #38bdf8;
+            padding-left: 12px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        
+        /* 工作經歷與專案 */
+        .item { margin-bottom: 25px; }
+        .item:last-child { margin-bottom: 0; }
+        .item-title { font-weight: 700; font-size: 1.1em; color: #1e293b; }
+        .item-time { color: #64748b; font-size: 0.9em; float: right; }
+        .item-subtitle { color: #475569; font-size: 0.95em; margin: 2px 0 10px; font-style: italic; }
+        
+        /* UX 專案/案例研究特製樣式 */
+        .project-card {
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 15px 20px;
+            margin-top: 10px;
+        }
+        .project-tag {
+            font-size: 0.8em;
+            background: #e2e8f0;
+            color: #475569;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        /* 技能標籤 */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        .skill-group h3 { font-size: 1em; margin: 0 0 8px 0; color: #475569; }
+        .skill-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+        .skill-tag {
+            background-color: #f1f5f9;
+            color: #334155;
+            padding: 4px 12px;
+            border-radius: 6px;
+            font-size: 0.85em;
+            border: 1px solid #e2e8f0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 個人資訊與核心作品集 -->
+    <header>
+        <h1>林思宇 (Chris Lin)</h1>
+        <p>UI/UX 設計師 ｜ 擅長數據驅動設計與用戶行為分析，平衡商業目標與用戶體驗</p>
+        <div class="header-links">
+            <a href="https://yourportfolio.com" class="portfolio-btn" target="_blank">查看作品集 Portfolio 🔗</a>
+            <a href="mailto:chris.ux@example.com">chris.ux@example.com</a>
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        </div>
+    </header>
+
+    <!-- 專業核心 -->
+    <section>
+        <h2>核心優勢</h2>
+        <p>擁有 3 年電商與 SaaS 產品設計經驗。擅長透過**用戶訪談**、**可用性測試**將複雜的需求轉化為直覺的介面流程。具備與產品經理 (PM) 及工程師緊密協作的敏捷開發經驗，能用前端語言（HTML/CSS）進行設計溝通。</p>
+    </section>
+
+    <!-- UX 精選專案案例 (UX Case Studies) -->
+    <section>
+        <h2>精選專案案例</h2>
+        <div class="item">
+            <span class="item-time">2025</span>
+            <div class="item-title">電商平台結帳流程重構 <span class="project-tag">手機網頁端</span></div>
+            <div class="project-card">
+                <p><strong>發現痛點：</strong> 數據顯示購物車放棄率高達 65%，經可用性測試發現填寫表單欄位過多且提示不明確。</p>
+                <p><strong>UX 解法：</strong> 將簡訊驗證與註冊流程合併，改為三步驟漸進式表單，並加入即時錯誤偵測。</p>
+                <p><strong>設計成效：</strong> 上線後**購物車轉化率提升 18%**，用戶結帳平均時間縮短 45 秒。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 工作經歷 -->
+    <section>
+        <h2>工作經歷</h2>
+        <div class="item">
+            <span class="item-time">2024.01 - 目前</span>
+            <div class="item-title">UI/UX 設計師</div>
+            <div class="item-subtitle">數位飛輪科技股份有限公司 (SaaS 產品團隊)</div>
+            <ul>
+                <li>主導 B2B 後台管理系統從 0 到 1 的設計，制定可複用的 **Design System (設計系統)**，提升開發團隊協作效率 40%。</li>
+                <li>定期執行遠端可用性測試 (Usability Testing)，根據 15 位深度用戶反饋優化功能動線。</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 專業技能區塊（分組呈現） -->
+    <section>
+        <h2>專業技能</h2>
+        <div class="skills-grid">
+            <div class="skill-group">
+                <h3>設計研究 (UX)</h3>
+                <div class="skill-tags">
+                    <div class="skill-tag">用戶訪談</div>
+                    <div class="skill-tag">資訊架構 (IA)</div>
+                    <div class="skill-tag">Wireframing</div>
+                    <div class="skill-tag">可用性測試</div>
+                </div>
+            </div>
+            <div class="skill-group">
+                <h3>介面與工具 (UI)</h3>
+                <div class="skill-tags">
+                    <div class="skill-tag">Figma</div>
+                    <div class="skill-tag">Design System</div>
+                    <div class="skill-tag">Prototyping</div>
+                    <div class="skill-tag">網頁響應式設計</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
